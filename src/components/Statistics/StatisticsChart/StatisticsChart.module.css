@@ -1,0 +1,53 @@
+.card {
+  width: 100%;
+}
+
+.visual {
+  position: relative;
+}
+
+.legend {
+  width: 100%;
+}
+
+.legendItem {
+  white-space: nowrap;
+}
+
+.legendSwatch {
+  border-radius: 999px;
+}
+
+:global(.chart-card) {
+  min-height: 356px;
+  padding: 20px;
+  border-radius: var(--radius-panel);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-main);
+}
+
+:global(.chart-card__visual) {
+  width: min(100%, 286px);
+  height: 286px;
+  margin: 0 auto;
+}
+
+:global(.chart-card__legend) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 18px;
+  margin-top: 16px;
+}
+
+:global(.chart-card__legend-item) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+}
+
+:global(.chart-card__legend-swatch) {
+  width: 24px;
+  height: 8px;
+}

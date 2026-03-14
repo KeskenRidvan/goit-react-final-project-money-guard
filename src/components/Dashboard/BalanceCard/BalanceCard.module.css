@@ -1,0 +1,10 @@
+.root {
+  width: 100%;
+}
+
+:global(.balance-card__amount) {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 700;
+}

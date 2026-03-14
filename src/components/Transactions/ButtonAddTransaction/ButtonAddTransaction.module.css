@@ -1,0 +1,20 @@
+.button {
+  isolation: isolate;
+}
+
+:global(.floating-action) {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gradient-main);
+  color: #fff;
+  box-shadow: var(--shadow-button);
+}

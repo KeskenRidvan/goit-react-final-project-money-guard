@@ -1,0 +1,21 @@
+.root {
+  inset: 0;
+}
+
+:global(.loader-backdrop) {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: rgba(34, 13, 91, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+:global(.loader-backdrop__text) {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}

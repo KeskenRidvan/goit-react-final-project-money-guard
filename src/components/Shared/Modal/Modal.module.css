@@ -1,0 +1,73 @@
+.backdrop {
+  inset: 0;
+}
+
+.modal {
+  width: 100%;
+}
+
+:global(.modal-backdrop) {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(34, 13, 91, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+:global(.modal) {
+  position: relative;
+  width: min(100%, 540px);
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(65, 40, 120, 1) 0%, rgba(40, 25, 75, 1) 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+:global(.modal--compact) {
+  width: min(100%, 420px);
+}
+
+:global(.modal__close) {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+}
+
+:global(.modal__title) {
+  margin: 0 0 24px;
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+:global(.modal__actions) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+:global(.modal__actions .button) {
+  max-width: 280px;
+}
+
+@media (min-width: 768px) {
+  :global(.modal__actions) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

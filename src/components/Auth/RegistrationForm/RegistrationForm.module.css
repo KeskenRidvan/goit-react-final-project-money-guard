@@ -1,0 +1,55 @@
+.form {
+  width: 100%;
+}
+
+:global(.auth-form) {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+:global(.auth-form__title) {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+:global(.field__input--auth) {
+  min-height: 36px;
+  padding: 0 0 8px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background: transparent;
+}
+
+:global(.field__input--auth:focus) {
+  background: transparent;
+  border-bottom-color: var(--color-yellow);
+}
+
+:global(.field__input--auth::placeholder) {
+  color: var(--color-text-faint);
+}
+
+:global(.password-meter) {
+  padding-top: 6px;
+}
+
+:global(.password-meter__header) {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: var(--color-text-soft);
+  font-size: 13px;
+}
+
+:global(.password-meter__fallback) {
+  height: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,20 @@
+.page {
+  min-width: 0;
+}
+
+:global(.filters-panel) {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  :global(.filters-panel) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  :global(.filters-panel) {
+    grid-template-columns: 180px 220px minmax(280px, 1fr);
+  }
+}

@@ -1,0 +1,8 @@
+.form {
+  width: 100%;
+}
+
+:global(.transaction-form) {
+  display: grid;
+  gap: 18px;
+}

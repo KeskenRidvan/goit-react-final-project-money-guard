@@ -1,0 +1,112 @@
+.table {
+  width: 100%;
+}
+
+:global(.transactions-list) {
+  display: grid;
+  gap: 16px;
+  max-height: 62vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+:global(.transactions-list--mobile) {
+  display: grid;
+}
+
+:global(.transactions-table) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  :global(.transactions-list--mobile) {
+    display: none;
+  }
+
+  :global(.transactions-table) {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-main);
+  }
+
+  :global(.transactions-table__head),
+  :global(.transactions-table__row) {
+    display: grid;
+    grid-template-columns: 90px 50px 110px minmax(140px, 1fr) 110px 110px;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  :global(.transactions-table__head) {
+    padding: 20px 18px;
+    background: rgba(255, 255, 255, 0.14);
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  :global(.transactions-table__body) {
+    display: grid;
+  }
+
+  :global(.transactions-table__row) {
+    min-height: 62px;
+    padding: 0 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  :global(.transactions-table__amount) {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  :global(.transactions-table__amount--income) {
+    color: var(--color-yellow);
+  }
+
+  :global(.transactions-table__amount--expense) {
+    color: var(--color-pink);
+  }
+
+  :global(.transactions-table__actions-head) {
+    text-align: right;
+  }
+
+  :global(.transactions-table__actions) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+
+  :global(.transactions-table__edit) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  :global(.transactions-table__delete) {
+    min-height: 29px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 20px;
+    background: var(--gradient-auth);
+    color: #fff;
+  }
+}
+
+@media (min-width: 1280px) {
+  :global(.transactions-table__head),
+  :global(.transactions-table__row) {
+    grid-template-columns: 92px 50px 96px minmax(150px, 1fr) 120px 120px;
+  }
+}

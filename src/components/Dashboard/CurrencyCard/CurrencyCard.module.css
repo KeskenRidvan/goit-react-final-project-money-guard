@@ -1,0 +1,45 @@
+.root {
+  width: 100%;
+}
+
+:global(.currency-card) {
+  display: grid;
+  gap: 18px;
+  overflow: hidden;
+}
+
+:global(.currency-card__time) {
+  color: var(--color-text-soft);
+  font-size: 12px;
+}
+
+:global(.currency-table__head),
+:global(.currency-table__row) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+:global(.currency-table__head) {
+  padding: 15px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-soft);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+:global(.currency-table__row) {
+  padding: 12px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 768px) {
+  :global(.currency-card) {
+    gap: 20px;
+  }
+
+  :global(.currency-card--wide) {
+    max-width: 540px;
+  }
+}

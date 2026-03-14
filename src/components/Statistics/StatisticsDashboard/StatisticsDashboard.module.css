@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+}
+
+:global(.statistics-dashboard) {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  :global(.statistics-dashboard) {
+    grid-template-columns: repeat(2, minmax(0, 220px));
+  }
+}

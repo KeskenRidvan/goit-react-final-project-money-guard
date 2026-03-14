@@ -1,0 +1,36 @@
+.page {
+  min-width: 0;
+}
+
+.panel {
+  width: 100%;
+}
+
+:global(.auth-page) {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  padding: 32px 0;
+}
+
+:global(.auth-panel) {
+  padding: 32px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-panel);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  box-shadow: var(--shadow-main);
+}
+
+:global(.auth-panel--narrow) {
+  width: min(calc(100% - 32px), 520px);
+  margin: auto;
+}
+
+:global(.auth-shell__text) {
+  max-width: 520px;
+  color: var(--color-text-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}

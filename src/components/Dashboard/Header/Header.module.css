@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+}
+
+:global(.dashboard-header) {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #ffffff;
+  color: #000000;
+}
+
+:global(.dashboard-header .brand) {
+  color: #000000;
+}
+
+:global(.dashboard-header__actions) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+:global(.dashboard-header__user) {
+  display: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:global(.confirm-dialog) {
+  display: grid;
+  gap: 18px;
+}
+
+:global(.confirm-dialog p) {
+  margin: 0;
+  text-align: center;
+  color: var(--color-text-soft);
+}
+
+@media (min-width: 768px) {
+  :global(.dashboard-header) {
+    padding: 16px 32px;
+  }
+
+  :global(.dashboard-header__user) {
+    display: inline;
+  }
+}

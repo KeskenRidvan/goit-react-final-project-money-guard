@@ -1,0 +1,43 @@
+.root {
+  width: fit-content;
+}
+
+:global(.brand) {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--font-logo);
+  font-size: 18px;
+  line-height: 1;
+}
+
+:global(.brand--centered) {
+  justify-content: center;
+}
+
+:global(.brand__symbol) {
+  position: relative;
+  width: 27px;
+  height: 24px;
+}
+
+:global(.brand__dot) {
+  position: absolute;
+  border-radius: 50%;
+}
+
+:global(.brand__dot--left) {
+  left: 0;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(180deg, #24cca7 0%, #00ad84 100%);
+}
+
+:global(.brand__dot--right) {
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(180deg, #ffc727 0%, #ffb627 100%);
+}
