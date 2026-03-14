@@ -1,0 +1,1 @@
+import{j as r}from"./index-C__h3ZRf.js";import{C as e}from"./CurrencyCard-BbzHWCDn.js";import"./selectors-x7K_uTob.js";function o(){return r.jsx("section",{className:"page-section page-section--currency",children:r.jsx(e,{fullWidth:!0})})}export{o as default};
