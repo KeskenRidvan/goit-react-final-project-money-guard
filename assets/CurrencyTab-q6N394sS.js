@@ -1,0 +1,1 @@
+import{j as e}from"./index-C3ckK3cB.js";import{C as r}from"./CurrencyCard-DNoGptgA.js";import"./selectors-x7K_uTob.js";const t="_page_1ju48_1",s={page:t};function c(){return e.jsx("section",{className:`${s.page} page-section page-section--currency`,children:e.jsx(r,{fullWidth:!0})})}export{c as default};
